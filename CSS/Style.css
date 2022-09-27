@@ -1,0 +1,60 @@
+/*Esta es la vista desktop*/
+body {
+     background-color: #D2D79F;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo img {
+    width: 120px;
+    height: 70px;
+    float: left;
+}
+
+#botonera_principal{
+    width: 800px;
+    height: 50px;
+    float: left;
+    margin-top: 25px;
+}
+
+#botonera_principal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+}
+
+#botonera_principal ul li {
+    display: inline;
+}
+
+#botonera_principal ul li a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 75%;
+    background-color: #42855B;
+    color: #483838;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botonera_principal ul li a:hover {
+    color: rgb(255,255,255);
+    background-color: #42855B;
+}
+#botonera_principal ul li a:link {
+    background-color: rgba(0, 0, 0, 0.974);
+}
+#botonera_principal ul li a:visited {
+    background-color: rgba(133, 177, 146, 0.45);
+}
+#botonera_principal ul li a:active {
+    background-color: rgba(2, 230, 44, 0.45);
+}
