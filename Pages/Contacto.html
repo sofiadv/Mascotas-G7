@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <title>Contacto</title>
 </head>
 <body>
+    <form action="">
+        <fieldset>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre"><br><br>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" name="Apellido"><br><br>
+        <label for="Correo">Correo electrónico</label>
+        <input type="email" name="Correo" id="Correo"><br><br>
+        <label for="Tel">Teléfono de Contacto</label><br>
+        <input type="tel"id="Tel"name="Tel" placeholder="54-011-xxxx-xxxx" pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}-[0-9]{4}"required><br>
+    </fieldset><br>
+        <label for="Opción">Seleccione su opción</label>
+        <select name="Opción" id="Opción">
+            <option value="Perdida">Busco a mi mascota perdida</option>
+            <option value="Adopcion">Quiero adoptar</option>
+            <option value="Donación">Quiero contribuir</option>
+        </select><br><br> 
+        <p>Déjenos su comentario a continuación</p><br>
+        <textarea name="message" rows="10" cols="30">Contános cómo podemos ayudarte</textarea>
+  <br><br>
+  <input type="submit">
+    </form>
     
 </body>
 </html>
