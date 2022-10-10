@@ -106,14 +106,7 @@ footer {
     width: 2em;
     height: auto;
     }
-    .grilla {
-        display:grid;
-        size-adjust: auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1em;
-        grid-template-rows: auto;
-        padding: 20px
-    }
+
 
 /*Esta es la vista desktop*/
 /* body {
