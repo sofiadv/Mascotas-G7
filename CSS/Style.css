@@ -106,7 +106,36 @@ footer {
     width: 2em;
     height: auto;
     }
-
+    .grilla {
+        display:grid;
+        size-adjust: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1em;
+        grid-template-rows: auto;
+        padding: 20px
+    }
+    .grilla div {
+    background:#1c6758;
+    padding: 1em;
+    }
+    .grilla div {
+        transition: all 2s;
+    }
+    .grilla div:hover {
+        border: 2px solid #eef2e6;
+        transform: scale(1.5,1.5);
+    }
+    .ImagenP{
+        width: 100%;
+        object-fit: cover;
+    }
+    .DescripcionP{
+        position: relative;
+        margin: 1%;
+        color: #eef2e6;
+        width: 100%;
+    
+    }
 
 /*Esta es la vista desktop*/
 /* body {
