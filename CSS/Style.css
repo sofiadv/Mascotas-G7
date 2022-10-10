@@ -132,6 +132,7 @@ footer {
     .DescripcionP{
         position: relative;
         margin: 1%;
+        font-size: smaller;
         color: #eef2e6;
         width: 100%;
     
