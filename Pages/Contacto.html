@@ -39,14 +39,14 @@
                 <input type="text" id="nombre" name="nombre" required>
                 <br><br>
                 <label for="correo">e-Mail:</label>
-                <input type="email" name="correo">
+                <input type="email" name="correo" required>
                 <label for="teléfono de contacto">Teléfono de contacto:</label>
                 <input type="teléfono" name="teléfono">
                         <br><br>
             </fieldset>
             <br><br><br><br>
             <label for="comentarios"><b>Ingrese su consulta, sugerencia o comentario:</b> </label> <br>
-            <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="..." maxlength="100"></textarea>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="..." maxlength="100" required></textarea>
             <br>
             <label for="comentarios"><b>le agradecemos su contacto y responderemos a la brevedad</b> </label> <br><br><br>
             <br><br>
@@ -56,7 +56,7 @@
             <input type="radio" name="rb"  value="3"> Prov. Buenos Aires
             <br><br>
             
-           <input type="checkbox" name="condiciones"> Acepto los términos y condiciones
+           <input type="checkbox" name="condiciones" required> Acepto los <a href="Tycs.html">términos y condiciones</a>
             <br><br>
             <input type="submit" value="Enviar datos">
             <input type="reset" value="Borrar">

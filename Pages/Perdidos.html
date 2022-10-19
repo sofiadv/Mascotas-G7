@@ -29,7 +29,7 @@
 </header>
 <br><br><br>
 <body>
-    <H1>Si me encontraste, ponéte en contacto con nosotros mediante el formulario al final de la página</H1>
+    <H1>Si me encontraste, ponéte en contacto con nosotros mediante el formulario <a href="#form"> al final de la página</a></H1>
 <div class="grilla">
    <div class="Perdido">
         <img src="../IMG/img/Perdido1.jpg" alt="Perdido1" class="ImagenP">
@@ -66,8 +66,8 @@
 </div>
 
     <div>
-        
-        <form action="">
+       
+        <form action="" id="form">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="apellido">Apellido:</label>
@@ -76,7 +76,7 @@
                 <input type="text" id="nombre" name="nombre" required>
                 <br><br>
                 <label for="correo">e-Mail:</label>
-                <input type="email" name="correo">
+                <input type="email" name="correo" required>
                 <label for="teléfono de contacto">Teléfono de contacto:</label>
                 <input type="teléfono" name="teléfono">
                         <br><br>
@@ -102,7 +102,7 @@
             <label for="adjunto">Adjuntar foto:</label>
             <input type="file" name="adjunto">
             <br><br>
-           <input type="checkbox" name="condiciones"> Acepto los términos y condiciones
+           <input type="checkbox" name="condiciones" required> Acepto los <a href="Tycs.html">términos y condiciones</a>
             <br><br>
             <input type="submit" value="Enviar datos">
             <input type="reset" value="Borrar">
