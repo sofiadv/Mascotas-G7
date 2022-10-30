@@ -2,6 +2,25 @@
     box-sizing: border-box;
 }
 
+.content-foo > a{
+  color: black;
+  text-decoration: none;  
+}
+
+.content-foo > a{
+  color: black;
+  text-decoration: none;  
+}
+
+footer > a:hover{
+  text-decoration: underline;
+}
+
+.content-foo {    
+  color: black;  
+}
+
+
 :root{
     --color-uno: #1C6758;
     --color-dos: #3D8361;
@@ -138,7 +157,14 @@ footer{
     padding: 2%;
     padding-bottom: 5%;
     border-radius: 5px;
+
+    overflow: hidden;    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
 }
+
 
 .direcciones{
     background-color: var(--color-cuatro);
