@@ -176,6 +176,9 @@ footer{
     list-style-type: none;
 }
 
+/*perdidos*/
+
+
 .grilla {
     display:grid;
     size-adjust: auto;
@@ -194,6 +197,7 @@ padding: 1em;
 .grilla div:hover {
     border: 2px solid #eef2e6;
     transform: scale(1.5,1.5);
+    z-index: 10;
 }
 .ImagenP{
     width: 100%;
