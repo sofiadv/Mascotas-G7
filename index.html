@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascotas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/55711116cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/index.css">
 </head> 
@@ -14,7 +17,10 @@
         <div class="imagen">
             <img class='logo' src="IMG/animal-1299122_960_720.png" alt="FotoBDF">
         </div>
+        <div class="encabezado">
         <h1>Mascotas G7</h1>
+        <h2>Refugio de animales</h2>
+      </div>
     </div>
 <!-- <div> -->
     
@@ -31,6 +37,7 @@
     </nav>
 </header>
 <main>
+  <h2>Ultimos ingresos</h2>
   <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -40,7 +47,7 @@
   <div class="slide-img">
     <img src="./IMG/img/Gato1.jpg" style="width:100%">
   </div>
-    <div class="text">En adopción</div>
+    <div class="text-img">En adopción <p>Gata de 2 años muy mansa.</p></div>
   </div>
 
   <div class="mySlides fade">
@@ -48,7 +55,7 @@
   <div class="slide-img">
     <img src="./IMG/img/GalgoFlaco.png" style="width:100%">
   </div>
-    <div class="text-img">Perdidos</div>
+    <div class="text-img">Perdidos <p>Polito, se perdió en barrio norte C.A.B.A.</p></div>
   </div>
 
   <div class="mySlides fade">
@@ -56,7 +63,7 @@
     <div class="slide-img">
       <img src="./IMG/img/Perrocachorrotriste.jpg" style="width:100%">
     </div>
-    <div class="text">Necesidad de transito</div>
+    <div class="text-img">Necesidad de transito <p>Cachorro manso, se lleva bien con otros animales</p></div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -66,40 +73,40 @@
 <br>
 
 <!-- The dots/circles -->
-<div style="text-align:center">
+<div class="three-dots" style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 </main>
 <footer>
-    <div class="contenedor-footer">
+  <div class="contenedor-footer">
     <div class="direcciones">
-    <p>Ruta nro xx  km xxx, Moreno, Prov. de Bs As</p>
-    <p>011-xxxx-xxxx</p>
-    <p>info@xxxx.ar </p>
+      <p>Ruta nro xx  km xxx, Moreno, Prov. de Bs As</p>
+      <p>011-xxxx-xxxx</p>
+      <p>info@xxxx.ar </p>
     </div>
     <div class="media-map-container">
-    <div id="map">
+      <div id="map">
         <a href="https://goo.gl/maps/aWcGSoE43w2miwV37">
           <img src="../IMG/img/map.png" alt="map" width="350" height="250" class="mapa">
         </a>
+      </div>
     </div>
-
+  </div>
     <div id="redes">
         <nav id="botonera_footer">
             <ul class="media">
                 <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: var(--color-cuatro);"></i></a> </li>
-                <li><i class="fa-brands fa-google" style="color: var(--color-cuatro);"></i> </a> </li>
+                <li><a href="#"><i class="fa-brands fa-google" style="color: var(--color-cuatro);"></i> </a> </li>
                 <li><a href="#"><i class="fa-brands fa-instagram" style="color: var(--color-cuatro);"></i> </a> </li>
                 <li><a href="#"><i class="fa-brands fa-pinterest-p" style="color: var(--color-cuatro);"></i></a> </li>
                 <li><a href="#"><i class="fa-brands fa-twitter" style="color: var(--color-cuatro);"></i></a> </li>
                 <li><a href="#"><i class="fa-brands fa-youtube" style="color: var(--color-cuatro);"></i></a> </li>
             </ul>
            </nav>
-      </div>
+      
     </div>
-  </div>
   <i class="fa-brands fa-google" style="color: var(--color-uno);"></i>
 </footer>
 <script src="./JS/index.js"></script>

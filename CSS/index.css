@@ -12,6 +12,7 @@
 body{
     text-align: center;
     background-color: var(--color-tres);
+    font-family: 'roboto', sans-serif;
 }
 
 #logo{
@@ -22,6 +23,7 @@ body{
 .logo{
     width: 100%;   
     border-radius: 50%; 
+    margin-top: 30%;
 }
 
 .btn-header li{
@@ -31,6 +33,13 @@ body{
     height: 30px;
     border-radius: 5px;
     padding-top: 1%;
+}
+
+.btn-header li:hover{
+    background-color: var(--color-dos);
+    height: 50px;
+    transition: 1s ease;
+    padding-top: 3%;
 }
 
 ul{
@@ -105,7 +114,8 @@ li a{
     text-align: center;
     width: 50%;
     margin: 2% 25%;
-    border-radius: 50px;
+    border-radius: 20px;
+    opacity: 0.8;
   }
   
   /* Number text (1/3 etc) */
@@ -118,32 +128,11 @@ li a{
   }
   
   /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  .three-dots{
+    display: none;
   }
 
+ 
 footer{
     background-color: var(--color-uno);
     padding: 2%;
@@ -163,6 +152,7 @@ footer{
 
 .mapa{
     width: 100%;
+    border-radius: 5px;
 }
 
 .red-img{
@@ -186,9 +176,18 @@ footer{
     list-style-type: none;
 }
 
+@media(min-width: 430px){
+    .encabezado{
+        padding: 10%;
+    }
+}
+
 @media(min-width: 700px){
     h1{
         margin: auto;
+    }
+    .logo{
+        margin-top: 10%;
     }
     
     #botonera_principal ul{
@@ -198,6 +197,58 @@ footer{
     }
     #botonera_principal ul li{
         width: 100%;
-        padding-top: 5%;
+        padding-top: 2%;
     }
+
+    .btn-header li:hover{
+        background-color: var(--color-dos);
+        height: 30px;
+    }
+
+
+    /*carrousel*/
+    .three-dots{
+        display: block;
+        margin-bottom: 8%;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    
+      .contenedor-footer{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2%;
+      }
+
+      .direcciones{
+        padding-top: 16%;
+      }
+
+      .media{
+        width: 50%;
+      }
 }
