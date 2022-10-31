@@ -227,8 +227,31 @@ fieldset{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2%;
+}
+
+.form-foto{
+    margin-bottom: 5%;
+}
+
+.form-btn{
+    margin: 5% auto;
+}
+
+#comentarios{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.form-zonas{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.mascota{
+    margin-top: 5%;
 }
 
 @media(min-width: 430px){
@@ -310,8 +333,40 @@ fieldset{
       /*perdidos*/
       .grilla{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2%;
         width: 90%;
       }
+
+      /*formularios*/
+      .form-zonas{
+        display: inline;
+      }
+
+      .verificar{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-foto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-btn{
+        margin-top: 5%;
+      }
+      
+      .btn{
+            width: 20%;
+            height: 50px;
+      }
+}
+
+@media(min-width: 1200px){
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
