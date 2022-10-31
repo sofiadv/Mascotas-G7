@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head id="encabezado">
-    <!--
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mascotas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/55711116cb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/index.css">
-    -->
+    <title>Encontrados</title>
 </head> 
 <script  src="../JS/head.js"> </script>
 
 <header id="navegador">
+    <h2>Animales encontrados</h2>
     <script  src="../JS/header.js"> </script>
 </header>
 
-<body>
-    <div>
-        <form action="">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
-                <label for="correo">e-Mail:</label>
-                <input type="email" name="correo">
-                <label for="teléfono de contacto">Teléfono de contacto:</label>
-                <input type="teléfono" name="teléfono">
-                        <br><br>
-            </fieldset>
-            <br><br><br><br>
-            <label for="comentarios"><b>Ingrese su consulta:</b> </label> <br>
-            <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Características/lugar/dia y hora/etc " maxlength="100"></textarea>
-            <br><br>
-            <label for="tipo mascota">Seleccionar mascota:</label>
-            <select name="turno" id="turno" size="3">
-                <option value="1">Perro</option>
-                <option value="2">Gato</option>
-                <option value="3">Otro</option>
-            </select>
-            <br><br>
-            <label for="rb">Zona de residencia: </label>
-            <input type="radio" name="rb"  value="1"> CABA
-            <input type="radio" name="rb"  value="2"> Gran Buenos Aires
-            <input type="radio" name="rb"  value="3"> Prov. Buenos Aires
-            <br><br>
-            <label for="adjunto">Adjuntar foto:</label>
-            <input type="file" name="adjunto">
-            <br><br>
-           <input type="checkbox" name="condiciones"> Acepto los términos y condiciones
-            <br><br>
-            <input type="submit" value="Enviar datos">
-            <input type="reset" value="Borrar">
-        </form>
-
-    </div>
+<body>    
+    <main>
+        <div class="grilla">
+            <div class="img-mascota">
+                <img src="../IMG/imgEncontrados/Gato1.jpeg" alt="Gato1" class="ImagenP">
+                    <div class="DescripcionP">
+                        <h2>Gata, cuatro años</h2>
+                        <p>Hallada cerca de Montevideo y Vías, Ensenada. 13/10/2022</p>
+                    </div>
+            </div>
+            <div class="img-mascota">
+                <img src="../IMG/imgEncontrados/Perro1.jpg" alt="Perro1" class="ImagenP">
+                <div class="DescripcionP">
+                    <h2>Perro, 3 años</h2>
+                    <p>Hallado cerca de cruce Bernal, 10/10/2022</p>
+                </div>
+            </div>
+            <div class="img-mascota">
+                <img src="../IMG/imgEncontrados/Gato2.jpg" alt="Gato2" class="ImagenP">
+                <div class="DescripcionP">
+                    <h2>Gata, 2 años</h2>
+                    <p>Hallada cerca de estación constitución, 7/10/2022</p>
+                </div>
+            </div>
+            <div class="img-mascota">
+                <img src="../IMG/imgEncontrados/Perro2.jpg" alt="Perro2" class="ImagenP">
+                <div class="DescripcionP">
+                <h2>Perro, 4 años</h2>
+                <p>Hallado cerca de obelisco; 5/10/2022</p>
+                </div>
+            </div> 
+            <div class="img-mascota">
+                <img src="../IMG/imgEncontrados/Perro3.jpg" alt="Perro3" class="ImagenP">
+                <div class="DescripcionP">
+                <h2>Perro, menos de un año</h2>
+                <p>Hallado en parque patricios, 05/10/2022</p>
+                </div>
+            </div>
+        <div class="img-mascota">
+                <img src="../IMG/imgEncontrados/Gato3.jpg" alt="Gato3" class="ImagenP">
+                <div class="DescripcionP">
+                    <h2>Gato, 3 años</h2>
+                    <p>Hallado en ciudad universitaria, 29/09/2022</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
-<footer id="piedepagina" class="contenedor-footer"></footer>
+<footer id="piedepagina"></footer>
 <script  src="../JS/footer.js"> </script>  
-
+<script src="./JS/index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyDbcIi6iAYONfws7h6mqMszT1cMZQezDG8&callback=mostrarMapa"></script>
 </html>
