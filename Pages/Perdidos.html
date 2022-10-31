@@ -15,16 +15,16 @@
         </div>
         <div class="encabezado">
         <h1>Mascotas G7</h1>
-        <h2>Refugio de animales</h2>
+        <h2>Perdidos</h2>
       </div>
     </div>
     <nav id="botonera_principal">
         <ul class="btn-header">
             <li><a href="../index.html"> Inicio</a></li>
-            <li><a href="Encontrados.html">Encontrados</a></li>
-            <li><a href="EnAdopcion.html">En Adopción</a></li>
-            <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-            <Li><a href="Contacto.html">Contacto</a></Li>
+            <li><a href="/Pages/Encontrados.html">Encontrados</a></li>
+            <li><a href="/Pages/EnAdopcion.html">En Adopción</a></li>
+            <li><a href="/Pages/SobreNosotros.html">Sobre Nosotros</a></li>
+            <Li><a href="/Pages/Contacto.html">Contacto</a></Li>
         </ul>
     </nav>
     </header>
@@ -74,39 +74,42 @@
                 <input type="text" id="apellido" name="apellido" required>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-                <br><br>
                 <label for="correo">e-Mail:</label>
                 <input type="email" name="correo">
                 <label for="teléfono de contacto">Teléfono de contacto:</label>
                 <input type="teléfono" name="teléfono">
-                        <br><br>
+                <label for="nombre de la mascota">Nombre de la mascota:</label>
+                <input type="text" id="nombremasc" name="nombremasc" required>
             </fieldset>
-            <br><br><br><br>
-            <label for="comentarios"><b>Ingrese los detalles:</b> </label> <br>
+            <div class="form">
+            <label for="comentarios"><b>Ingrese los detalles:</b> </label>
             <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Características/lugar del extravío/fecha y hora" maxlength="100"></textarea>
-            <br><br>
             <label for="mascota perdida">Seleccionar mascota:</label>
-            <select name="turno" id="turno" size="3">
+            <select name="turno" id="turno">
                 <option value="1">Perro</option>
                 <option value="2">Gato</option>
                 <option value="3">Otro</option>
             </select>
-            <label for="nombre de la mascota">Nombre:</label>
-                <input type="text" id="nombremasc" name="nombremasc" required>
-            <br><br>
+        </div>
+        <div class="form-zonas">
             <label for="rb">Perdido en: </label>
             <input type="radio" name="rb"  value="1"> CABA
             <input type="radio" name="rb"  value="2"> Gran Buenos Aires
             <input type="radio" name="rb"  value="3"> Prov. Buenos Aires
-            <br><br>
+        </div>
+        <div class="verificar">
+            <div class="form-foto">
             <label for="adjunto">Adjuntar foto:</label>
             <input type="file" name="adjunto">
-            <br><br>
+        </div>
+        <div>
            <input type="checkbox" name="condiciones"> Acepto los términos y condiciones
-            <br><br>
-            <input type="submit" value="Enviar datos">
-            <input type="reset" value="Borrar">
-           
+            </div>
+        </div>
+        <div class="form-btn">
+            <input class="btn" type="submit" value="Enviar datos">
+            <input class="btn" type="reset" value="Borrar">
+        </div> 
         </form>
         
     </div>
