@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="../JS/validar.js"></script>
 </head>
 
 <header>
@@ -30,7 +31,7 @@
 <br><br><br><br><br><br><br><br>
 <body>
     <div>
-        <form action="">
+        <form action="contactar.php" method= "post" onsubmit= "return validar();">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="apellido">Apellido:</label>
@@ -39,9 +40,9 @@
                 <input type="text" id="nombre" name="nombre" required>
                 <br><br>
                 <label for="correo">e-Mail:</label>
-                <input type="email" name="correo">
+                <input type="email" id="correo" name="correo">
                 <label for="teléfono de contacto">Teléfono de contacto:</label>
-                <input type="teléfono" name="teléfono">
+                <input type="teléfono" id= "teléfono"name="teléfono">
                         <br><br>
             </fieldset>
             <br><br><br><br>
