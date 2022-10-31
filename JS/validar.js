@@ -31,7 +31,7 @@ function validar() {
     }
 
     else if (!valor.test(teléfono)){
-        alert ("Formato de teléfono inválido, ingresar según xx-xxxx-xxxx");
+        alert ("Formato de teléfono inválido, ingresar según nn-nnnn-nnnn");
         return false;
     }
     else if (comentarios.length>100){
