@@ -181,23 +181,26 @@ footer{
 /*perdidos*/
 
 
-.grilla {
-    display:grid;
+ .grilla {
+    width: 80%;
+    margin: 5% auto;
+    /* display:grid;
     size-adjust: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     grid-template-rows: auto;
-    padding: 20px
-}
+    padding: 20px */
+} 
 .grilla div {
 background:#1c6758;
 padding: 1em;
 }
 .grilla div {
     transition: all 2s;
+    max-width: 100%;
 }
 .grilla div:hover {
-    border: 2px solid #eef2e6;
+    border: 2px solid var(--color-cuatro);
     transform: scale(1.5,1.5);
     z-index: 10;
 }
@@ -209,9 +212,23 @@ padding: 1em;
     position: relative;
     margin: 1%;
     font-size: smaller;
-    color: #eef2e6;
-    width: 100%;
+    color: var(--color-cuatro);
+    width: 95%;
 
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2%;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 @media(min-width: 430px){
@@ -255,14 +272,14 @@ padding: 1em;
         height: 15px;
         width: 15px;
         margin: 0 2px;
-        background-color: #bbb;
+        background-color: var(--color-cuatro);
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
       }
       
       .active, .dot:hover {
-        background-color: #717171;
+        background-color: var(--color-dos);
       }
       
       /* Fading animation */
@@ -288,5 +305,13 @@ padding: 1em;
 
       .media{
         width: 50%;
+      }
+
+      /*perdidos*/
+      .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2%;
+        width: 90%;
       }
 }

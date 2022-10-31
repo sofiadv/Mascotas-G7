@@ -4,74 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encontrados</title>
-    <link rel="stylesheet" href="../CSS/Style.css">
-</head>
-
+    <title>Mascotas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/55711116cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head> 
+<body>
 <header>
     <div id="logo">
-        <img src="../IMG/animal-1299122_960_720.png" alt="Foto" width="250" height="200"></div>
-<div>
-    <h1>Mascotas G7</h1>
-    <h3><i> donde los cuidamos y se encuentran con sus nuevos hogares</i></h3>
-</div>
+        <div class="imagen">
+            <img class='logo' src="../IMG/animal-1299122_960_720.png" alt="FotoBDF">
+        </div>
+        <div class="encabezado">
+            <h1>Mascotas G7</h1>
+            <h2>Encontrados</h2>
+      </div>
+    </div>
     <nav id="botonera_principal">
-        <ul>
+        <ul class="btn-header">
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="Perdidos.html">Perdidos</a></li>
-            <li> Encontrados</a></li>
-            <li><a href="EnAdopcion.html">En Adopción</a></li>
-            <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-            <Li><a href="Contacto.html">Contacto</a></Li>
+            <li><a href="/Pages/Perdidos.html">Perdidos</a></li>
+            <li><a href="/Pages/EnAdopcion.html">En Adopción</a></li>
+            <li><a href="/Pages/SobreNosotros.html">Sobre Nosotros</a></li>
+            <Li><a href="/Pages/Contacto.html">Contacto</a></Li>
         </ul>
     </nav>
 </header>
-
-<br><br><br><br><br><br><br><br>
-<body>
+<main>
     <div>
-        
         <form action="">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required>
-
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-                <br><br>
                 <label for="correo">e-Mail:</label>
                 <input type="email" name="correo">
                 <label for="teléfono de contacto">Teléfono de contacto:</label>
                 <input type="teléfono" name="teléfono">
-                        <br><br>
             </fieldset>
-            <br><br><br><br>
-            <label for="comentarios"><b>Ingrese su consulta:</b> </label> <br>
+            <div class="form">
+            <label for="comentarios"><b>Ingrese su consulta:</b> </label>
             <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Características/lugar/dia y hora/etc " maxlength="100"></textarea>
-            <br><br>
             <label for="tipo mascota">Seleccionar mascota:</label>
-            <select name="turno" id="turno" size="3">
+            <select id="mascota">
                 <option value="1">Perro</option>
                 <option value="2">Gato</option>
                 <option value="3">Otro</option>
             </select>
-            <br><br>
+        </div>
             <label for="rb">Zona de residencia: </label>
             <input type="radio" name="rb"  value="1"> CABA
             <input type="radio" name="rb"  value="2"> Gran Buenos Aires
             <input type="radio" name="rb"  value="3"> Prov. Buenos Aires
-            <br><br>
             <label for="adjunto">Adjuntar foto:</label>
             <input type="file" name="adjunto">
-            <br><br>
-           <input type="checkbox" name="condiciones"> Acepto los términos y condiciones
-            <br><br>
+            <input type="checkbox" name="condiciones"> Acepto los términos y condiciones
             <input type="submit" value="Enviar datos">
-            <input type="reset" value="Borrar">
-           
-        </form>
+            <input type="reset" value="Borrar"> 
         
+        </form>
     </div>
+</main>
 </body>
 </html>
